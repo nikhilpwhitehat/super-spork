@@ -1,0 +1,36 @@
+<html>
+    <head>
+    <title>Family Book</title>
+</head>
+<body>
+    <img src= "https://lh3.googleusercontent.com/proxy/P9QNgGC37l2rCrHyUVTuYgnf3mhXpQRD9aOFfUnzmC3mbS3m1OPD7ocwq2HCsDa2OkjJ6ZzjGrnFQN4p77nrja6SzfD9SdbWlA">
+    <h4  id="family_member_name">
+    <button onclick="update();">Next</button>
+    <script>
+        var images = 
+        ["https://lh3.googleusercontent.com/proxy/P9QNgGC37l2rCrHyUVTuYgnf3mhXpQRD9aOFfUnzmC3mbS3m1OPD7ocwq2HCsDa2OkjJ6ZzjGrnFQN4p77nrja6SzfD9SdbWlA",
+        "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.pngitem.com%2Fpimgs%2Fm%2F284-2841358_mother-with-short-brown-hair-clip-art-at.png&imgrefurl=https%3A%2F%2Fwww.pngitem.com%2Fmiddle%2FiJoiTRo_mother-with-short-brown-hair-clip-art-at%2F&tbnid=Mcvp4a0XQiY2GM&vet=12ahUKEwjwk-qAmfXwAhWysjEKHaGYBcoQMygGegUIARDkAQ..i&docid=DuvtNNfxmKKtjM&w=860&h=1071&q=mom%20clipart&safe=strict&ved=2ahUKEwjwk-qAmfXwAhWysjEKHaGYBcoQMygGegUIARDkAQ",
+        "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F14%2F71%2F36%2F1471365a568614885ccb2c233334cdd0.png&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F507640189247801104%2F&tbnid=7FaMK1fpIjEUpM&vet=12ahUKEwiZ5ZOtmfXwAhXLOd8KHX8RCH0QMygAegUIARDWAQ..i&docid=4bUJAmF6U2PbrM&w=320&h=566&q=dad%20clipart&safe=strict&ved=2ahUKEwiZ5ZOtmfXwAhXLOd8KHX8RCH0QMygAegUIARDWAQ",
+        "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.pngitem.com%2Fpimgs%2Fm%2F331-3319591_sister-clipart-face-brother-clipart-hd-png-download.png&imgrefurl=https%3A%2F%2Fwww.pngitem.com%2Fmiddle%2FhRRhxTi_sister-clipart-face-brother-clipart-hd-png-download%2F&tbnid=fHM3Am0JcFhXIM&vet=12ahUKEwj7lv--mfXwAhXErXIEHTZfBZwQMygCegUIARDbAQ..i&docid=LsiDKi59B_CFbM&w=860&h=753&q=sister%20clipart&safe=strict&ved=2ahUKEwj7lv--mfXwAhXErXIEHTZfBZwQMygCegUIARDbAQ",
+        "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.clipartkey.com%2Fmpngs%2Fm%2F21-212153_escola-amp-formatura-children-clip-art-school-brother.png&imgrefurl=https%3A%2F%2Fwww.clipartkey.com%2Fview%2FiTmxoh_escola-amp-formatura-children-clip-art-school-brother%2F&tbnid=DgajMPpA_T6rSM&vet=12ahUKEwjlwcznmfXwAhXmn3IEHQf7AB4QMygJegUIARDtAQ..i&docid=DcuEUohNDz4P6M&w=900&h=1360&q=brother%20clipart&safe=strict&ved=2ahUKEwjlwcznmfXwAhXmn3IEHQf7AB4QMygJegUIARDtAQ"];
+    var names =
+    ["Family book","Padma","Ranjit","Tanvi","Nikhil"];
+
+    var i = 0;
+    function update()
+    {
+        i++;
+        var number_of_family_member_in_array = 5
+        if(i > number_of_family_member_in_array)
+        {
+            i = 0;
+        }
+        var updatedImage = images[i];
+        var updatedName = names[i];
+        document.getElementById("family_member_image").src = updatedImage
+        document.getElementById("family_member_name").innerHTML = updatedName
+    }
+    </script>
+
+</body>
+</html>
